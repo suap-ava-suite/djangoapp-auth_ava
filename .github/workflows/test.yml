@@ -1,0 +1,46 @@
+name: Tests
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    continue-on-error: ${{ matrix.experimental }}
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.12", "3.13"]
+        django-version: ["5.2", "6.0"]
+        experimental: [false]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          allow-prereleases: true
+
+      - name: Install dependencies
+        run: |
+          pip install -e ".[dev]"
+          pip install "Django~=${{ matrix.django-version }}"
+
+      - name: Run tests
+        run: pytest --cov=auth_ava --cov-report=xml --cov-fail-under=95
+
+      - name: Upload coverage to Codecov
+        if: ${{ !matrix.experimental }}
+        uses: codecov/codecov-action@v5
+        with:
+          files: ./coverage.xml
+          token: ${{ secrets.CODECOV_TOKEN }}
+          flags: python${{ matrix.python-version }}-django${{ matrix.django-version }}
+          fail_ci_if_error: false
