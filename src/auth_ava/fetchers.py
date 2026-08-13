@@ -1,8 +1,27 @@
 import logging
 from typing import Any, Dict, List, Optional
 
-from django_suap_auth.exceptions import SuapUserInfoError
-from django_suap_auth.fetchers import BaseUserInfoFetcher
+try:
+    from django_suap_auth.exceptions import SuapUserInfoError
+except ImportError:  # pragma: no cover
+
+    class SuapUserInfoError(Exception):
+        pass
+
+
+try:
+    from django_suap_auth.fetchers import BaseUserInfoFetcher
+except ImportError:  # pragma: no cover
+
+    class BaseUserInfoFetcher:
+        def __init__(self, suap_settings=None):
+            self.suap_settings = suap_settings or {}
+
+        def fetch(self, client, access_token, user_info=None):
+            if user_info is None:
+                user_info = {}
+            return user_info
+
 
 logger = logging.getLogger(__name__)
 
