@@ -3,7 +3,7 @@
 [![PyPI Version](https://img.shields.io/pypi/v/django-auth-ava)](https://pypi.org/project/django-auth-ava/)
 [![Tests](https://github.com/suap-ava-suite/djangoapp-auth_ava/actions/workflows/test.yml/badge.svg)](https://github.com/suap-ava-suite/djangoapp-auth_ava/actions/workflows/test.yml)
 [![Python Versions](https://img.shields.io/pypi/pyversions/django-auth-ava.svg)](https://pypi.org/project/django-auth-ava/)
-[![Django Versions](https://img.shields.io/badge/django-5.2%20|%206.0-blue)](https://www.djangoproject.com/)
+[![Django Versions](https://img.shields.io/badge/django-6.0-blue)](https://www.djangoproject.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Coverage](https://codecov.io/gh/suap-ava-suite/djangoapp-auth_ava/branch/main/graph/badge.svg)](https://codecov.io/gh/suap-ava-suite/djangoapp-auth_ava)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)

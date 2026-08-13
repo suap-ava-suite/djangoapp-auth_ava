@@ -20,7 +20,7 @@ Com uv
 Requisitos
 ----------
 
-* Python >= 3.12
-* Django >= 5.2, < 7.0
+* Python >= 3.14
+* Django >= 6.0, < 7.0
 * django-suap-auth >= 1.0.1
 * django-simple-history >= 3.7.0
