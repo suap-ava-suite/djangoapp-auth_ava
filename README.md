@@ -1,8 +1,8 @@
-# django-auth-ava
+# auth-ava
 
-[![PyPI Version](https://img.shields.io/pypi/v/django-auth-ava)](https://pypi.org/project/django-auth-ava/)
+[![PyPI Version](https://img.shields.io/pypi/v/auth-ava)](https://pypi.org/project/auth-ava/)
 [![Tests](https://github.com/suap-ava-suite/djangoapp-auth_ava/actions/workflows/test.yml/badge.svg)](https://github.com/suap-ava-suite/djangoapp-auth_ava/actions/workflows/test.yml)
-[![Python Versions](https://img.shields.io/pypi/pyversions/django-auth-ava.svg)](https://pypi.org/project/django-auth-ava/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/auth-ava.svg)](https://pypi.org/project/auth-ava/)
 [![Django Versions](https://img.shields.io/badge/django-6.0-blue)](https://www.djangoproject.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Coverage](https://codecov.io/gh/suap-ava-suite/djangoapp-auth_ava/branch/main/graph/badge.svg)](https://codecov.io/gh/suap-ava-suite/djangoapp-auth_ava)
@@ -34,9 +34,9 @@ Construído sobre o [`django-suap-auth`](https://pypi.org/project/django-suap-au
 ## Instalação
 
 ```bash
-uv add django-auth-ava
+uv add auth-ava
 # ou com pip:
-pip install django-auth-ava
+pip install auth-ava
 ```
 
 ---

@@ -8,7 +8,7 @@ Com pip
 
 .. code-block:: bash
 
-   pip install django-auth-ava
+   pip install auth-ava
 
 Com uv
 ------

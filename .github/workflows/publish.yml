@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/p/django-auth-ava
+      url: https://pypi.org/p/auth-ava
     permissions:
       id-token: write
     steps:

@@ -28,7 +28,7 @@ html_theme = "django_docs_theme"
 html_theme_path = [django_docs_theme.get_html_theme_path()]
 
 html_theme_options = {
-    "project_name": "django-auth-ava",
+    "project_name": "auth-ava",
     "tagline": "Modelos concretos e normalizados para autenticação SUAP no ecossistema AVA",
     "github_url": "https://github.com/suap-ava-suite/djangoapp-auth_ava",
     "github_repo": "suap-ava-suite/djangoapp-auth_ava",
